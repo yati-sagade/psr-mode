@@ -38,12 +38,6 @@
 ;;     The <ga|qu>i<e|c>k <hi|br>ow<ii|n> <t|f>ox jump<a|s> upo<ii|n>
 ;;     the l<os|az>y dog.
 
-(defun insert-ket ()
-  (interactive)
-  (forward-char)
-  (insert "|>")
-  (backward-char))
-
 (defmacro pos-1 ()
   '(if (use-region-p)
        (region-beginning)
